@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F60445CC1BF4A18C0079A30C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F60445CB1BF4A18C0079A30C /* main.m */; };
+		F60445D31BF4B2B30079A30C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60445D21BF4B2B30079A30C /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F60445C81BF4A18C0079A30C /* CrayonsInfo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CrayonsInfo; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60445CB1BF4A18C0079A30C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F60445D21BF4B2B30079A30C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60445D31BF4B2B30079A30C /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		F60445BF1BF4A18C0079A30C = {
 			isa = PBXGroup;
 			children = (
+				F60445D21BF4B2B30079A30C /* AppKit.framework */,
 				F60445CA1BF4A18C0079A30C /* CrayonsInfo */,
 				F60445C91BF4A18C0079A30C /* Products */,
 			);
