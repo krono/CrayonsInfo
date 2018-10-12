@@ -16,11 +16,20 @@ int main(int argc, const char * argv[]) {
         NSColorList *colorList = [NSColorList colorListNamed: @"Crayons"];
         for (NSString *key in [colorList allKeys]) {
             NSColor *color = [colorList colorWithKey:key];
-            printf("%-10s\t", [key UTF8String]);
-            printf("r: %3d g: %3d b: %3d\n",
+            printf("%-10s", [key UTF8String]);
+            printf("\t\tr: %3d g: %3d b: %3d",
                   bcomponent(color.redComponent),
                   bcomponent(color.greenComponent),
                   bcomponent(color.blueComponent));
+            printf("\t\t#%02X%02X%02X",
+                   bcomponent(color.redComponent),
+                   bcomponent(color.greenComponent),
+                   bcomponent(color.blueComponent));
+            printf("\t\tr: %-10g g: %-10g b: %-10g",
+                   color.redComponent,
+                   color.greenComponent,
+                   color.blueComponent);
+            printf("\n");
         }
         if (!([[NSFileManager defaultManager] createDirectoryAtPath:@"OldCrayons.clr"
                                         withIntermediateDirectories:NO
